@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -9,14 +13,17 @@
     <meta name="description" content="André Miller professional website">
     <title>André Miller</title>
 </head>
-<body style="font-family: Arial">
+<body>
     <header>
-        <h1>André Miller</h1>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <h1 id="webname">André Miller</h1>
         <nav>
-            <a href="../index.html">Home</a> |
-            <a href="cv.html">CV</a> |
-            <a href="contact.html">Contact Me!</a> |
-            <a href="for-fun.html">For fun!</a> 
+            <a class="link" href="../index.html">Home</a> 
+            <a class="link" href="cv.html">CV</a> 
+            <a class="link" href="contact.html">Contact Me!</a> 
+            <a class="link" href="for-fun.html">For fun!</a> 
         </nav>
     </header>
     <div class="main">
@@ -31,17 +38,27 @@
             <label for="comment">Your comment: </label><br>
             <textarea id="comment" name="comment" rows="5" cols="30"></textarea><br><br>
             
-            <input type="submit" value="Submit">
+            <input type="submit" value="Submit" class="button">
         </form>
-        <table>
+        <table class="table">
             <tr>
-                Email: andremillerbr@gmail.com <br>
-                Phone: (225)362-6217 <br>
-                LinkedIn: https://www.linkedin.com/in/andré-miller/ <br>
+                <td>Email: </td>
+                <td>andremillerbr@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Phone: </td>
+                <td>(225)362-6217</td>
+            </tr>
+            <tr>
+                <td>LinkedIn: </td>
+                <td>LinkedIn: https://www.linkedin.com/in/andré-miller/</td>
             </tr>
         </table>
     </div>
     <footer>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <p>&copy; Designed and coded by André Miller.</p>
     </footer>
 </body>

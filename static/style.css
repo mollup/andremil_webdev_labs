@@ -1,0 +1,51 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+    padding: 5px;
+    margin: 5px;
+}
+
+.link {
+    text-decoration: none;
+    color: #075900
+}
+
+.button {
+    background-color: #92ad70;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 12px;
+}
+
+table {
+    border-collapse: collapse;
+    width: fit-content;
+    display: block;
+    margin: auto;
+    text-align: center;
+    padding: 12px;
+    background-color: #92ad70;
+    color: #eeeeee
+} 
+
+th, td {
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: #5e905a;
+}
+
+#webname {
+    background-color: #92ad70;
+}
