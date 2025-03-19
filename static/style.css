@@ -56,3 +56,70 @@ tr:nth-child(even) {
 #webname {
     background-color: #92ad70;
 }
+
+#funList {
+    display: none;
+}
+
+#showButton {
+    background-color: #5e905a;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#showButton:hover {
+    background-color: #075900
+}
+
+#readLess {
+    background-color: #5e905a;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: none;
+}
+
+#readLess:hover {
+    background-color: #075900
+}
+
+#readMore {
+    background-color: #5e905a;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: block;
+}
+
+#readMore:hover {
+    background-color: #075900
+}
+
+#long {
+    display: none;
+}
+#short {
+    display: block;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.9em;
+    display: block;
+    margin-top: 5px;
+}
+
+.input-error {
+    border: 2px solid red;
+    background-color: #ffe6e6;
+}

@@ -16,6 +16,7 @@
 </head>
 <body>
     <header>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -30,16 +31,19 @@
     <div class="main">
         <h2 id="greeting">Hi, my name is André.</h2>
         <img src="views/headshot.jpg" alt="headshot">
-        <p> 
+        <p id="short">Information Systems major at CMU.</p>
+        <p id="long"> 
             Hi! As I mentioned, my name is André Miller and I am an <br>
             Information Systems student at Carnegie Mellon University. <br>
             I am passionate about product design and software engineering, <br>
             but would love to talk about anything else ranging from music <br>
             to Pokémon cards.
         </p>
+        <button id="readMore">Read More</button>
+        <button id ="readLess">Read Less</button>
     </div>
     <footer>
-        <p>&copy; Designed and coded by André Miller.</p>
+        <p id="copyYear"> Designed and coded by André Miller &copy; </p>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
