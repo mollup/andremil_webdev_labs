@@ -12,10 +12,13 @@
     <meta name="keywords" content="Carnegie Mellon University, Information Systems">
     <meta name="description" content="André Miller professional website">
     <title>André Miller</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="../static/script.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 <body>
     <header>
+        
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -27,8 +30,13 @@
             <a class="link" href="for-fun.html">For fun!</a> 
         </nav>
     </header>
-    <div class="main">
-        <h2>Contact Me</h2>
+    <div class="mainLayout">
+        <div id="item1">
+            <h2>Find me!</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2178.4090432122207!2d-79.94437252555952!3d40.44581985387075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834f22275f67f0f%3A0x9e3cb77fc360e5fd!2s1057%20Morewood%20Ave%2C%20Pittsburgh%2C%20PA%2015213!5e1!3m2!1sen!2sus!4v1742788051201!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div id="item2">
+            <h2>Contact Me</h2>
         <form class="contact-form" onsubmit="validate(event)" novalidate>
             <label for="name">Your name (required): </label>
             <input type="text" id="name" name="name" required>
@@ -58,6 +66,7 @@
                 <td>LinkedIn: https://www.linkedin.com/in/andré-miller/</td>
             </tr>
         </table>
+        </div>
     </div>
     <footer>
         <link rel="preconnect" href="https://fonts.googleapis.com">

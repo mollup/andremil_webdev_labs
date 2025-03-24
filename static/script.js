@@ -40,47 +40,52 @@ function loop(l) {
 // loop(L1);
 // loop(L2);
 
-function greetingFunc() {
-    let d = new Date();
-    let h = d.getHours();
-    if (h < 5) {
-        message = "Good night my name is André Miller";
-    } else if (h < 12) {
-        message = "Good morning, my name is André Miller";
-    } else if (h < 18) {
-        message = "Good afternoon, my name is André Miller";
-    } else if (h < 20) {
-        message = "Good evening, my name is André Miller";
-    } else {
-        message = "Good night, my name is André Miller";
+document.addEventListener("DOMContentLoaded", function() {
+    function greetingFunc() {
+        let d = new Date();
+        let h = d.getHours();
+        let message;
+        if (h < 5) {
+            message = "Good night my name is André Miller";
+        } else if (h < 12) {
+            message = "Good morning, my name is André Miller";
+        } else if (h < 18) {
+            message = "Good afternoon, my name is André Miller";
+        } else if (h < 20) {
+            message = "Good evening, my name is André Miller";
+        } else {
+            message = "Good night, my name is André Miller";
+        }
+        let E = document.getElementById("greeting");
+        if (E) {
+            E.innerHTML = message;
+        }
     }
-    let E = document.getElementById("greeting");
-    E.innerHTML = message;
-}
 
-window.onLoad = greetingFunc;
+    function year() {
+        let d = new Date();
+        let y = d.getFullYear();
+        let E = document.getElementById("copyYear");
+        if (E) {
+            E.innerHTML += y;
+        }
+    }
 
-greetingFunc();
+    greetingFunc();
+    year();
+});
 
-function year() {
-    let d = new Date();
-    let y = d.getFullYear();
-    let E = document.getElementById("copyYear").innerHTML += y;
-}
-
-window.onLoad = year();
-
-function showList() {
-    let list = document.getElementById("funList");
-    let button = document.getElementById("showButton");
+// function showList() {
+//     let list = document.getElementById("funList");
+//     let button = document.getElementById("showButton");
     
-    if (list.style.display!="block") {
-        list.style.display = "block";
-    }
-    else {
-        list.style.display = "none";
-    }
-}
+//     if (list.style.display!="block") {
+//         list.style.display = "block";
+//     }
+//     else {
+//         list.style.display = "none";
+//     }
+// }
 
 $(document).ready(function(){
     $("#readMore").click(function(){
@@ -141,4 +146,16 @@ function validate(event) {
     if (!isValid) {
         event.preventDefault();  // Stop the form from submitting if invalid
     }
+}
+
+function getAdvice() {
+    fetch("https://api.adviceslip.com/advice")
+        .then(response => response.json()) // Convert response to JSON
+        .then(data => {
+            document.getElementById("adviceText").innerText = data.slip.advice; // Update the text
+        })
+        .catch(error => {
+            console.error("Error fetching advice:", error);
+            document.getElementById("adviceText").innerText = "Sorry, couldn't fetch advice!";
+        });
 }

@@ -13,6 +13,7 @@
     <meta name="description" content="André Miller professional website">
     <title>André Miller</title>
     <script src="../static/script.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 <body>
     <header>
@@ -27,16 +28,31 @@
             <a class="link" href="for-fun.html">For fun!</a> 
         </nav>
     </header>
-    <div class="main">
-        <h2>Things I love to do for fun!</h2>
-        <button id="showButton" onclick="showList()">Click to see...</button>
-        <ul id="funList">
-            <li>Pokémon Cards/Pokémon in general</li>
-            <li> Listening to music: <br>
+    <div class="funsection">
+        <div id="item1">
+            <h2>Things I love to do for fun!</h2>
+            <!-- <button id="showButton" onclick="showList()">Click to see...</button> -->
+            <ul id="funList">
+                <li>Pokémon Cards/Pokémon in general</li>
+                <li> Listening to music: <br>
                 Favorites are Radiohead, Elliott Smith, Beabadoobee, Dean Blunt, and Title Fight. <br>
                 I will listen to pretty much anything from rock/folk to reggaeton/rap, and would love to talk more!</li>
-            <li>Watch the New Orleans Pelicans (Next year is our year!).</li>
-        </ul>
+                <li>Watch the New Orleans Pelicans (Next year is our year!).</li>
+            </ul>
+        </div>
+        <div id="item2">
+            <img id="mompic" src="../views/mom.png" alt="mom">
+        </div>
+        <div id="item3">
+            <iframe id="vid" width="250" height="250" 
+            src="https://www.youtube.com/embed/3176Sw8A0EE">
+            </iframe>
+        </div>
+        <div class="container" id="item4">
+            <h2>Need some advice?</h2>
+            <p id="adviceText">Click the button to get a piece of advice!</p>
+            <button onclick="getAdvice()">GetAdvice</button>
+        </div>
     </div>
     <footer>
         <link rel="preconnect" href="https://fonts.googleapis.com">
